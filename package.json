@@ -4,7 +4,8 @@
   "description": "explores security in node application",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./index.js --exec babel-node -e js"
+    "start": "nodemon ./index.js --exec babel-node -e js",
+    "test": "mocha --require babel-register --require babel-polyfill"
   },
   "author": "siddheshDhage",
   "license": "ISC",
@@ -17,7 +18,11 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-0": "^6.24.1"
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "mocha": "^9.1.1"
   }
 }
